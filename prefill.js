@@ -79,10 +79,10 @@ Mary had a little lamb! It’s fleece was white as snow!',
             return this;
         this.each(function() {
             var me = $(this)
-            ,   fo = me.attr('form')
-            ,   id = me.attr('name')
-            ,   tn = me.attr('tagName')
-            ,   ty = me.attr('type')
+            ,   fo = me.prop('form')
+            ,   id = me.prop('name')
+            ,   tn = me.prop('tagName')
+            ,   ty = me.prop('type')
             ;
             try {
                 // no LABEL /or/ OPTION /or/ submit
